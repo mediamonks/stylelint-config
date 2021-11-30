@@ -1,0 +1,7 @@
+{
+  "extends": "@mediamonks/eslint-config-base",
+  "plugins": ["import", "unicorn", "babel", "prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  }
+}

@@ -18,6 +18,18 @@
   "license": "MIT",
   "author": "Media.Monks",
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --write --loglevel warn",
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@mediamonks/eslint-config-base": "^2.0.0-alpha.3",
+    "eslint": "^8.3.0",
+    "prettier": "^2.5.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.1.0"
+  },
   "engines": {
     "node": ">=14",
     "npm": ">=7",
