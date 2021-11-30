@@ -17,5 +17,10 @@
   },
   "license": "MIT",
   "author": "Media.Monks",
-  "main": "index.js"
+  "main": "index.js",
+  "engines": {
+    "node": ">=14",
+    "npm": ">=7",
+    "yarn": "unsupported"
+  }
 }
