@@ -1,0 +1,21 @@
+{
+  "name": "stylelint-config",
+  "version": "1.0.0-alpha.1",
+  "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
+  "keywords": [
+    "css",
+    "stylelint",
+    "stylelint-config"
+  ],
+  "homepage": "https://github.com/mediamonks/stylelint-config#readme",
+  "bugs": {
+    "url": "https://github.com/mediamonks/stylelint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediamonks/stylelint-config.git"
+  },
+  "license": "MIT",
+  "author": "Media.Monks",
+  "main": "index.js"
+}
