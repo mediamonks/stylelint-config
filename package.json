@@ -22,5 +22,8 @@
     "node": ">=14",
     "npm": ">=7",
     "yarn": "unsupported"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
