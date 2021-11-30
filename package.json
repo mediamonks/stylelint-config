@@ -1,5 +1,5 @@
 {
-  "name": "stylelint-config",
+  "name": "@mediamonks/stylelint-config",
   "version": "1.0.0-alpha.1",
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
