@@ -12,5 +12,6 @@ module.exports = {
     'declaration-block-single-line-max-declarations': 0,
     'color-hex-case': 'upper',
     'alpha-value-notation' : 'number',
+    'unit-disallowed-list': ['s'],
   },
 };
