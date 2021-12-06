@@ -28,13 +28,17 @@
     "prettier": "^2.5.0"
   },
   "peerDependencies": {
+    "postcss-scss": "^4.0.2",
     "stylelint": "^14.1.0",
-    "postcss-scss": "^4.0.2"
+    "stylelint-config-standard": "^24.0.0"
   },
   "engines": {
     "node": ">=14"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "stylelint-scss": "^4.0.0"
   }
 }

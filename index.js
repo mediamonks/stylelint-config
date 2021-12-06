@@ -1,6 +1,11 @@
 'use strict';
 
 module.exports = {
+  extends: ['stylelint-config-standard'],
   customSyntax: require('postcss-scss'),
-  rules: {},
+  plugins: ['stylelint-scss'],
+  rules: {
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
+  },
 };
