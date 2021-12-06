@@ -15,5 +15,16 @@ module.exports = {
     'color-function-notation': 'modern',
     'alpha-value-notation' : 'number',
     'unit-disallowed-list': ['s'],
+    'max-nesting-depth': [
+      2,
+      {
+        ignoreAtRules: [
+          "media",
+        ],
+        ignore: [
+          'pseudo-classes',
+        ],
+      },
+    ],
   },
 };
