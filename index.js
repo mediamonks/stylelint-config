@@ -9,5 +9,6 @@ module.exports = {
     'scss/at-rule-no-unknown': true,
     'max-empty-lines': 1,
     'number-leading-zero': 'always',
+    'declaration-block-single-line-max-declarations': 0,
   },
 };
