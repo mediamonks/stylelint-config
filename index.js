@@ -10,5 +10,6 @@ module.exports = {
     'max-empty-lines': 1,
     'number-leading-zero': 'always',
     'declaration-block-single-line-max-declarations': 0,
+    'color-hex-case': 'upper',
   },
 };
