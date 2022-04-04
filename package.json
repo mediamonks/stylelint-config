@@ -4,6 +4,7 @@
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
     "css",
+    "Media.Monks",
     "stylelint",
     "stylelint-config"
   ],
@@ -16,30 +17,31 @@
     "url": "git+https://github.com/mediamonks/stylelint-config.git"
   },
   "license": "MIT",
-  "author": "Media.Monks",
+  "author": "frontend.monks",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write --loglevel warn",
+    "format": "prettier \"**/*.{js,jsx,ts,tsx,scss,md,json}\" --write --loglevel warn",
     "lint": "eslint"
   },
+  "prettier": "@mediamonks/prettier-config",
+  "eslintConfig": {
+    "extends": "@mediamonks/eslint-config-base",
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    }
+  },
   "devDependencies": {
-    "@mediamonks/eslint-config-base": "^2.0.0-alpha.3",
-    "eslint": "^8.3.0",
-    "prettier": "^2.5.0"
+    "@mediamonks/eslint-config-base": "^2.2.1",
+    "@mediamonks/prettier-config": "^1.0.1"
   },
   "peerDependencies": {
     "postcss-scss": "^4.0.2",
     "stylelint": "^14.1.0",
     "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-scss": "^4.0.0",
-    "stylelint-config-standard": "^24.0.0"
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-scss": "^4.0.0"
   },
   "engines": {
     "node": ">=14"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
   }
 }

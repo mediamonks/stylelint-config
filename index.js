@@ -1,7 +1,6 @@
-'use strict';
-
+/* eslint-disable global-require */
 module.exports = {
-  extends: ['stylelint-config-standard', "stylelint-config-idiomatic-order"],
+  extends: ['stylelint-config-standard', 'stylelint-config-idiomatic-order'],
   customSyntax: require('postcss-scss'),
   plugins: ['stylelint-scss'],
   rules: {
@@ -13,17 +12,13 @@ module.exports = {
     'color-hex-case': 'upper',
     'color-hex-length': 'long',
     'color-function-notation': 'modern',
-    'alpha-value-notation' : 'number',
+    'alpha-value-notation': 'number',
     'unit-disallowed-list': ['s'],
     'max-nesting-depth': [
       2,
       {
-        ignoreAtRules: [
-          "media",
-        ],
-        ignore: [
-          'pseudo-classes',
-        ],
+        ignoreAtRules: ['media'],
+        ignore: ['pseudo-classes'],
       },
     ],
   },
