@@ -1,5 +1,6 @@
 {
   "name": "@mediamonks/stylelint-config",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],

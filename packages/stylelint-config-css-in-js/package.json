@@ -1,9 +1,9 @@
 {
   "name": "@mediamonks/stylelint-config-css-in-js",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.1",
   "main": "index.js",
   "dependencies": {
-    "@mediamonks/stylelint-config": "*",
+    "@mediamonks/stylelint-config": "^1.0.0-alpha.2",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "stylelint-config-styled-components": "^0.1.1"
   }
