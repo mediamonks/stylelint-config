@@ -13,7 +13,6 @@ module.exports = {
     'no-irregular-whitespace': true,
     'alpha-value-notation': 'number',
     'color-function-notation': 'modern',
-    'color-hex-case': 'upper',
     'color-hex-length': 'long',
     'declaration-block-single-line-max-declarations': 0,
     'no-descending-specificity': true,

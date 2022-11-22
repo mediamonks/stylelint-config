@@ -22,19 +22,24 @@
   "license": "MIT",
   "author": "frontend.monks",
   "scripts": {
-    "format": "prettier \"**/*.{js,jsx,ts,tsx,scss,css,md,json}\" --write --loglevel warn",
-    "eslint": "eslint",
     "stylelint": "npm run stylelint --workspaces --if-present",
-    "stylelint:fix": "npm run stylelint:fix --workspaces --if-present"
+    "stylelint:fix": "npm run stylelint:fix --workspaces --if-present",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@mediamonks/eslint-config-base": "^2.2.1",
     "@mediamonks/prettier-config": "^1.0.1",
     "eslint": "^8.28.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"
   },
   "engines": {
     "node": ">=16"
   },
-  "prettier": "@mediamonks/prettier-config"
+  "prettier": "@mediamonks/prettier-config",
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,scss,css,md,json}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
 }
