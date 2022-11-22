@@ -39,7 +39,7 @@
   },
   "prettier": "@mediamonks/prettier-config",
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,scss,css,md,json}": "prettier --write",
-    "*.{js,jsx,ts,tsx}": "eslint --fix"
+    "*.{js,jsx,scss,css,md,json}": "prettier --write",
+    "*.{js,jsx}": "eslint --fix"
   }
 }
