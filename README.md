@@ -9,7 +9,13 @@ The configuration can be installed via `npm`.
 
 ```bash
 npm install --dev @mediamonks/stylelint-config-css
+```
+
+```bash
 npm install --dev @mediamonks/stylelint-config-scss
+```
+
+```bash
 npm install --dev @mediamonks/stylelint-config-css-in-js
 ```
 
