@@ -27,9 +27,6 @@
     "stylelint": "npm run stylelint --workspaces --if-present",
     "stylelint:fix": "npm run stylelint:fix --workspaces --if-present"
   },
-  "dependencies": {
-    "stylelint": "^14.15.0"
-  },
   "devDependencies": {
     "@mediamonks/eslint-config-base": "^2.2.1",
     "@mediamonks/prettier-config": "^1.0.1",
@@ -38,5 +35,6 @@
   },
   "engines": {
     "node": ">=16"
-  }
+  },
+  "prettier": "@mediamonks/prettier-config"
 }

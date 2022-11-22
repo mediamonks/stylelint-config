@@ -6,7 +6,8 @@
     "stylelint:fix": "stylelint ./**/*.jsx --fix"
   },
   "dependencies": {
+    "@mediamonks/stylelint-config-css-in-js": "*",
     "styled-components": "^5.3.6",
-    "@mediamonks/stylelint-config-css-in-js": "*"
+    "stylelint": "^14.15.0"
   }
 }

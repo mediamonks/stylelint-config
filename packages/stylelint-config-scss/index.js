@@ -1,7 +1,7 @@
 module.exports = {
-  extends: ["stylelint-config-standard-scss", "@mediamonks/stylelint-config"],
-  plugins: ["stylelint-use-nesting"],
+  extends: ['stylelint-config-standard-scss', '@mediamonks/stylelint-config'],
+  plugins: ['stylelint-use-nesting'],
   rules: {
-    "csstools/use-nesting": "always",
+    'csstools/use-nesting': 'always',
   },
 };

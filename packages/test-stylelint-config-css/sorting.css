@@ -16,13 +16,12 @@
   text-align: end;
 }
 
-
 @media (min-width: 50px) {
   .selector {
     background-color: springgreen;
   }
 }
 
-.selector[dir="rtl"] {
+.selector[dir='rtl'] {
   background-color: burlywood;
 }

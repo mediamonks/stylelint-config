@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MyComponent = styled.div`
   --var-a: 50px;
@@ -21,7 +21,7 @@ export const MyComponent = styled.div`
     background-color: springgreen;
   }
 
-  &[dir="rtl"] {
+  &[dir='rtl'] {
     background-color: burlywood;
   }
 `;

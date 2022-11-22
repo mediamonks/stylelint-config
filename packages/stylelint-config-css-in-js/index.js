@@ -1,11 +1,8 @@
 module.exports = {
-  extends: [
-    "stylelint-config-styled-components",
-    "@mediamonks/stylelint-config",
-  ],
-  customSyntax: "@stylelint/postcss-css-in-js",
-  plugins: ["stylelint-use-nesting"],
+  extends: ['stylelint-config-styled-components', '@mediamonks/stylelint-config'],
+  customSyntax: '@stylelint/postcss-css-in-js',
+  plugins: ['stylelint-use-nesting'],
   rules: {
-    "csstools/use-nesting": "always",
+    'csstools/use-nesting': 'always',
   },
 };
