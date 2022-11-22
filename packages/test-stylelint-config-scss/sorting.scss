@@ -1,0 +1,65 @@
+@mixin mixin-with-block {
+  @content;
+}
+
+@mixin mixin-without-block {
+  background-color: azure;
+}
+
+.selector {
+  @include mixin-without-block;
+  @include mixin-with-block {
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  --var-a: 50px;
+  --var-b: 50px;
+  --var-1: 50px;
+  --var-2: 50px;
+
+  background-color: red;
+  block-size: 50px;
+  display: grid;
+  inline-size: 50px;
+  margin: 25px;
+  margin-block-end: 50px;
+  margin-block-start: 50px;
+  margin-inline-end: 50px;
+  margin-inline-start: 50px;
+  padding-block-end: 50px;
+  padding-inline-start: 50px;
+  text-align: end;
+
+  @media (min-width: 50px) {
+    background-color: springgreen;
+  }
+
+  &[dir="rtl"] {
+    background-color: #EB4034;
+  }
+
+  .nested {
+    background-color: cornflowerblue;
+  }
+}
+
+/* Selectors */
+.s1,
+.s2,
+.s3 {
+  background-color: blanchedalmond;
+}
+
+.s1 {
+  background-color: antiquewhite;
+
+  &:hover {
+    background-color: blueviolet;
+  }
+}
+
+.b {
+  .s1:hover & {
+    background: brown;
+  }
+}

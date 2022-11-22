@@ -1,0 +1,14 @@
+{
+  "name": "@mediamonks/stylelint-config",
+  "version": "1.0.0-alpha.2",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-order": "^5.0.0",
+    "stylelint-use-logical": "^2.0.0",
+    "stylelint-use-nesting": "^4.0.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^14.15.0"
+  }
+}

@@ -8,24 +8,42 @@ The official Media.Monks stylelint configuration, based on the
 The configuration can be installed via `npm`.
 
 ```bash
-npm install --dev @mediamonks/stylelint-config
+npm install --dev @mediamonks/stylelint-config-css
+npm install --dev @mediamonks/stylelint-config-scss
+npm install --dev @mediamonks/stylelint-config-css-in-js
 ```
 
-To inform prettier of this configuration, you have to add the `stylelint` property to your
+To inform stylelint of this configuration, you have to add the `stylelint` property to your
 `package.json` file:
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config"
+   "extends": "@mediamonks/stylelint-config-css"
+}
+```
+
+```json
+"stylelint": {
+   "extends": "@mediamonks/stylelint-config-scss"
+}
+```
+
+```json
+"stylelint": {
+   "extends": "@mediamonks/stylelint-config-css-in-js"
 }
 ```
 
 Instead of manually editing your `package.json`, you can also utilize the `npm pkg` subcommand:
 
 ```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config
+npm pkg set stylelint.extends=@mediamonks/stylelint-config-css
 ```
 
-## Extending
+```bash
+npm pkg set stylelint.extends=@mediamonks/stylelint-config-scss
+```
 
-[Stylelint Configuration Extending](https://github.com/stylelint/stylelint/blob/main/docs/user-guide/configure.md#extends)
+```bash
+npm pkg set stylelint.extends=@mediamonks/stylelint-config-css-in-js
+```

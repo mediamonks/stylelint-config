@@ -1,0 +1,9 @@
+{
+  "name": "@mediamonks/stylelint-config-scss",
+  "version": "1.0.0-alpha.2",
+  "main": "index.js",
+  "dependencies": {
+    "@mediamonks/stylelint-config": "*",
+    "stylelint-config-standard-scss": "^6.1.0"
+  }
+}

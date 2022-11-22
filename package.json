@@ -1,12 +1,14 @@
 {
   "name": "@mediamonks/stylelint-config",
-  "version": "1.0.0-alpha.2",
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
     "css",
     "Media.Monks",
-    "stylelint",
-    "stylelint-config"
+    "stylelint-config",
+    "stylelint"
   ],
   "homepage": "https://github.com/mediamonks/stylelint-config#readme",
   "bugs": {
@@ -18,30 +20,22 @@
   },
   "license": "MIT",
   "author": "frontend.monks",
-  "main": "index.js",
   "scripts": {
-    "format": "prettier \"**/*.{js,jsx,ts,tsx,scss,md,json}\" --write --loglevel warn",
-    "lint": "eslint"
+    "format": "prettier \"**/*.{js,jsx,ts,tsx,scss,css,md,json}\" --write --loglevel warn",
+    "eslint": "eslint",
+    "stylelint": "npm run stylelint --workspaces --if-present",
+    "stylelint:fix": "npm run stylelint:fix --workspaces --if-present"
   },
-  "prettier": "@mediamonks/prettier-config",
-  "eslintConfig": {
-    "extends": "@mediamonks/eslint-config-base",
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    }
+  "dependencies": {
+    "stylelint": "^14.15.0"
   },
   "devDependencies": {
     "@mediamonks/eslint-config-base": "^2.2.1",
-    "@mediamonks/prettier-config": "^1.0.1"
-  },
-  "peerDependencies": {
-    "postcss-scss": "^4.0.2",
-    "stylelint": "^14.1.0",
-    "stylelint-config-idiomatic-order": "^8.1.0",
-    "stylelint-config-standard": "^24.0.0",
-    "stylelint-scss": "^4.0.0"
+    "@mediamonks/prettier-config": "^1.0.1",
+    "eslint": "^8.28.0",
+    "prettier": "^2.7.1"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=16"
   }
 }

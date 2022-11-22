@@ -1,0 +1,10 @@
+{
+  "name": "@mediamonks/stylelint-config-css-in-js",
+  "version": "1.0.0-alpha.2",
+  "main": "index.js",
+  "dependencies": {
+    "@mediamonks/stylelint-config": "*",
+    "@stylelint/postcss-css-in-js": "^0.38.0",
+    "stylelint-config-styled-components": "^0.1.1"
+  }
+}
