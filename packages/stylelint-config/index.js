@@ -3,6 +3,7 @@ module.exports = {
   plugins: [
     'stylelint-order',
     'stylelint-use-logical',
+    'stylelint-use-nesting',
     // "stylelint-devtool-prop-order",
   ],
   rules: {
@@ -28,6 +29,9 @@ module.exports = {
     /**
      * Plugin rules
      */
+    'csstools/use-nesting': 'always',
+    'csstools/use-logical': 'always',
+    // "csstools/devtool-prop-order": "always",
     // Replace with `stylelint-devtool-prop-order` when it's published
     'order/properties-order': [
       [],
@@ -54,7 +58,5 @@ module.exports = {
       },
       'rules',
     ],
-    'csstools/use-logical': 'always',
-    // "csstools/devtool-prop-order": "always",
   },
 };
