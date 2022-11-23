@@ -4,7 +4,7 @@ module.exports = {
     'stylelint-order',
     'stylelint-use-logical',
     'stylelint-use-nesting',
-    // "stylelint-devtool-prop-order",
+    // "stylelint-devtool-prop-order", -- enable when published
   ],
   rules: {
     /**
@@ -31,15 +31,7 @@ module.exports = {
      */
     'csstools/use-nesting': 'always',
     'csstools/use-logical': 'always',
-    // "csstools/devtool-prop-order": "always",
-    // Replace with `stylelint-devtool-prop-order` when it's published
-    'order/properties-order': [
-      [],
-      {
-        unspecified: 'bottomAlphabetical',
-        emptyLineBeforeUnspecified: 'never',
-      },
-    ],
+    // "csstools/devtool-prop-order": "always", -- enable when published
     'order/order': [
       {
         type: 'at-rule',
