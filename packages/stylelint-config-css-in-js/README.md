@@ -1,4 +1,4 @@
-# Media.Monks - Stylelint Configuration
+# Media.Monks - @mediamonks/stylelint-config-css-in-js
 
 The official Media.Monks stylelint configuration, based on the
 [Frontend Coding Standards](https://github.com/mediamonks/frontend-coding-standards).
@@ -6,14 +6,6 @@ The official Media.Monks stylelint configuration, based on the
 ## Installation
 
 The configuration can be installed via `npm`.
-
-```bash
-npm install --dev @mediamonks/stylelint-config-css
-```
-
-```bash
-npm install --dev @mediamonks/stylelint-config-scss
-```
 
 ```bash
 npm install --dev @mediamonks/stylelint-config-css-in-js
@@ -24,31 +16,11 @@ To inform stylelint of this configuration, you have to add the `stylelint` prope
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config-css"
-}
-```
-
-```json
-"stylelint": {
-   "extends": "@mediamonks/stylelint-config-scss"
-}
-```
-
-```json
-"stylelint": {
    "extends": "@mediamonks/stylelint-config-css-in-js"
 }
 ```
 
 Instead of manually editing your `package.json`, you can also utilize the `npm pkg` subcommand:
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-css
-```
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-scss
-```
 
 ```bash
 npm pkg set stylelint.extends=@mediamonks/stylelint-config-css-in-js

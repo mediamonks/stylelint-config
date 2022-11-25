@@ -1,0 +1,12 @@
+{
+  "name": "@mediamonks/test-stylelint-config-css",
+  "private": true,
+  "scripts": {
+    "stylelint": "stylelint ./**/*.css",
+    "stylelint:fix": "stylelint ./**/*.css --fix"
+  },
+  "dependencies": {
+    "@mediamonks/stylelint-config-css": "*",
+    "stylelint": "^14.15.0"
+  }
+}

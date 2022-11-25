@@ -1,0 +1,71 @@
+name: Bump version & Publish
+
+on:
+  workflow_dispatch:
+    inputs:
+      package:
+        description: 'Select the package'
+        required: true
+        type: choice
+        options:
+          - packages/stylelint-config
+          - packages/stylelint-config-css
+          - packages/stylelint-config-css-in-js
+          - packages/stylelint-config-scss
+      version:
+        description: 'Semver type of new version'
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - prerelease
+      prereleaseid:
+        description: 'Prerelease id (rc)'
+        required: false
+        default: ''
+jobs:
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - name: Install npm packages
+        run: |
+          cd ${{ github.event.inputs.package }}
+          npm ci
+      - name: Setup Git
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+      - name: bump version workspace
+        run: |
+          echo "1. cd ${{ github.event.inputs.package }}"
+          cd ${{ github.event.inputs.package }}
+
+          echo "2. npm version"
+          npm version ${{ github.event.inputs.version }} --no-git-tag-version --preid ${{ github.event.inputs.prereleaseid }}
+
+          echo "3. git add"
+          git add .
+
+          echo "4. git commit ${{ github.event.inputs.package }} v$(npm pkg get version | jq -r '.[]')"
+          git commit -m "${{ github.event.inputs.package }} v$(npm pkg get version | jq -r '.[]')"
+
+          echo "5. git tag $(npm pkg get name | jq -r '.[]')@$(npm pkg get version | jq -r '.[]')"
+          git tag $(npm pkg get name | jq -r '.[]')@$(npm pkg get version | jq -r '.[]')
+      - name: publish
+        run: |
+          cd ${{ github.event.inputs.package }}
+          npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          npm publish
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Push latest version
+        run: git push origin main --follow-tags
