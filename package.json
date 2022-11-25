@@ -4,30 +4,13 @@
   "workspaces": [
     "packages/*"
   ],
-  "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
-  "keywords": [
-    "css",
-    "Media.Monks",
-    "stylelint-config",
-    "stylelint"
-  ],
-  "homepage": "https://github.com/mediamonks/stylelint-config#readme",
-  "bugs": {
-    "url": "https://github.com/mediamonks/stylelint-config/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mediamonks/stylelint-config.git"
-  },
-  "license": "MIT",
-  "author": "frontend.monks",
   "scripts": {
     "stylelint": "npm run stylelint --workspaces --if-present",
     "stylelint:fix": "npm run stylelint:fix --workspaces --if-present",
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@mediamonks/eslint-config-base": "^2.2.1",
+    "@mediamonks/eslint-config": "^2.0.3",
     "@mediamonks/prettier-config": "^1.0.1",
     "eslint": "^8.28.0",
     "husky": "^8.0.2",
@@ -41,5 +24,8 @@
   "lint-staged": {
     "*.{js,jsx,scss,css,md,json}": "prettier --write",
     "*.{js,jsx}": "eslint --fix"
+  },
+  "eslintConfig": {
+    "extends": "@mediamonks/eslint-config"
   }
 }

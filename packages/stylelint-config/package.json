@@ -1,14 +1,27 @@
 {
   "name": "@mediamonks/stylelint-config",
   "version": "1.0.0-alpha.2",
+  "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
+  "keywords": [
+    "Media.Monks",
+    "stylelint-config",
+    "stylelint"
+  ],
+  "homepage": "https://github.com/mediamonks/stylelint-config#readme",
+  "bugs": {
+    "url": "https://github.com/mediamonks/stylelint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mediamonks/stylelint-config.git"
+  },
+  "license": "MIT",
+  "author": "frontend.monks",
   "main": "index.js",
-  "dependencies": {
+  "peerDependencies": {
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-order": "^5.0.0",
     "stylelint-use-logical": "^2.0.0",
     "stylelint-use-nesting": "^4.0.0"
-  },
-  "peerDependencies": {
-    "stylelint": "^14.15.0"
   }
 }

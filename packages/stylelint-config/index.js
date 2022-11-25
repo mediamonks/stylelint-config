@@ -1,11 +1,7 @@
+/* eslint-disable no-undef, unicorn/prefer-module, no-magic-numbers */
 module.exports = {
   extends: ['stylelint-config-prettier'],
-  plugins: [
-    'stylelint-order',
-    'stylelint-use-logical',
-    'stylelint-use-nesting',
-    // "stylelint-devtool-prop-order", -- enable when published
-  ],
+  plugins: ['stylelint-order', 'stylelint-use-logical', 'stylelint-use-nesting'],
   rules: {
     /**
      * Stylelint rules
@@ -29,9 +25,7 @@ module.exports = {
     /**
      * Plugin rules
      */
-    'csstools/use-nesting': 'always',
     'csstools/use-logical': 'always',
-    // "csstools/devtool-prop-order": "always", -- enable when published
     'order/order': [
       {
         type: 'at-rule',
