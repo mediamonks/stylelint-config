@@ -1,6 +1,6 @@
 {
   "name": "@mediamonks/stylelint-config-css",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
     "Media.Monks",
