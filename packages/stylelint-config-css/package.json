@@ -18,6 +18,9 @@
   },
   "license": "MIT",
   "author": "frontend.monks",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "peerDependencies": {
     "@mediamonks/stylelint-config": "^1.0.0-alpha.2",

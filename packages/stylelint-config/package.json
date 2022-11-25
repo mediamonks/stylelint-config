@@ -17,6 +17,9 @@
   },
   "license": "MIT",
   "author": "frontend.monks",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "peerDependencies": {
     "stylelint-config-prettier": "^9.0.4",
