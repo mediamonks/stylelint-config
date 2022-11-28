@@ -27,6 +27,13 @@
     "*.{js,jsx}": "eslint --fix"
   },
   "eslintConfig": {
-    "extends": "@mediamonks/eslint-config"
+    "extends": "@mediamonks/eslint-config",
+    "env": {
+      "node": true,
+      "browser": true
+    },
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    }
   }
 }

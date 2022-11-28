@@ -1,4 +1,13 @@
-/* eslint-disable no-undef, unicorn/prefer-module, no-magic-numbers */
+const patternRuleOptions = [
+  /^[a-z][a-zA-Z0-9]*$/u,
+  {
+    message(selector) {
+      return `Expected ${selector} to be camelCase`;
+    },
+  },
+];
+
+// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
   extends: ['stylelint-config-prettier'],
   plugins: ['stylelint-order', 'stylelint-use-logical', 'stylelint-use-nesting'],
@@ -16,11 +25,14 @@ module.exports = {
     'number-leading-zero': 'always',
     'custom-property-no-missing-var-function': true,
     'max-nesting-depth': [
+      // eslint-disable-next-line no-magic-numbers
       1,
       {
         ignore: ['blockless-at-rules'],
       },
     ],
+    'selector-class-pattern': patternRuleOptions,
+    'selector-id-pattern': patternRuleOptions,
 
     /**
      * Plugin rules
