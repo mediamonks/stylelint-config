@@ -1,4 +1,20 @@
-.selector {
+/* Class selector name pattern */
+.camelCase {
+  background: red;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.kebab-case {
+  background: red;
+}
+
+/* stylelint-disable-next-line selector-class-pattern */
+.PascalCase {
+  background: red;
+}
+
+/* Properties order */
+.selectorOne {
   --var-a: 50px;
   --var-b: 50px;
   --var-1: 50px;

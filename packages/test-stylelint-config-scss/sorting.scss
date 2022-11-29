@@ -6,6 +6,13 @@
   background-color: azure;
 }
 
+/* Dollar variable name pattern */
+$camelCase: red;
+/* stylelint-disable-next-line scss/dollar-variable-pattern */
+$kebab-case: red;
+/* stylelint-disable-next-line scss/dollar-variable-pattern */
+$PascalCase: red;
+
 .selector {
   @include mixin-without-block;
   @include mixin-with-block {
