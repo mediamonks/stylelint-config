@@ -43,13 +43,13 @@ module.exports = {
         type: 'at-rule',
         hasBlock: false,
       },
+      'custom-properties',
+      'dollar-variables',
+      'declarations',
       {
         type: 'at-rule',
         hasBlock: true,
       },
-      'custom-properties',
-      'dollar-variables',
-      'declarations',
       {
         type: 'at-rule',
         name: 'media',

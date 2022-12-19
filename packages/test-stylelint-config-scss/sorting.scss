@@ -15,9 +15,6 @@ $PascalCase: red;
 
 .selector {
   @include mixin-without-block;
-  @include mixin-with-block {
-    grid-template-columns: repeat(3, 150px);
-  }
 
   --var-a: 50px;
   --var-b: 50px;
@@ -36,6 +33,10 @@ $PascalCase: red;
   padding-block-end: 50px;
   padding-inline-start: 50px;
   text-align: end;
+
+  @include mixin-with-block {
+    grid-template-columns: repeat(3, 150px);
+  }
 
   @media (min-width: 50px) {
     background-color: springgreen;
