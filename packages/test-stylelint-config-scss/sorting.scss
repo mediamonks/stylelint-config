@@ -34,20 +34,20 @@ $PascalCase: red;
   padding-inline-start: 50px;
   text-align: end;
 
-  @include mixin-with-block {
-    grid-template-columns: repeat(3, 150px);
-  }
-
-  @media (min-width: 50px) {
-    background-color: springgreen;
-  }
-
   &[dir='rtl'] {
     background-color: #eb4034;
   }
 
   .nested {
     background-color: cornflowerblue;
+  }
+
+  @include mixin-with-block {
+    grid-template-columns: repeat(3, 150px);
+  }
+
+  @media (min-width: 50px) {
+    background-color: springgreen;
   }
 }
 
@@ -66,8 +66,6 @@ $PascalCase: red;
   }
 }
 
-.b {
-  .s1:hover & {
-    background: brown;
-  }
+.b .s1:hover & {
+  background: brown;
 }

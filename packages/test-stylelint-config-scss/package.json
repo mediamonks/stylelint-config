@@ -6,6 +6,7 @@
     "stylelint:fix": "stylelint ./**/*.scss --fix"
   },
   "devDependencies": {
+    "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-scss": "*",
     "stylelint": "^14.15.0"
   }

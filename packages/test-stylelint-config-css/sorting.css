@@ -1,10 +1,10 @@
 /* Class selector name pattern */
-.camelCase {
+.kebab-case {
   background: red;
 }
 
 /* stylelint-disable-next-line selector-class-pattern */
-.kebab-case {
+.camelCase {
   background: red;
 }
 
@@ -14,7 +14,7 @@
 }
 
 /* Properties order */
-.selectorOne {
+.selector-one {
   --var-a: 50px;
   --var-b: 50px;
   --var-1: 50px;

@@ -17,11 +17,11 @@ export const MyComponent = styled.div`
   margin-inline-start: 50px;
   text-align: end;
 
-  @media (min-width: 50px) {
-    background-color: springgreen;
-  }
-
   &[dir='rtl'] {
     background-color: burlywood;
+  }
+
+  @media (min-width: 50px) {
+    background-color: springgreen;
   }
 `;

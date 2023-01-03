@@ -9,7 +9,6 @@ const patternRuleOptions = [
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  extends: ['stylelint-config-prettier'],
   plugins: ['stylelint-order', 'stylelint-use-logical', 'stylelint-use-nesting'],
   rules: {
     /**
@@ -46,6 +45,7 @@ module.exports = {
       'custom-properties',
       'dollar-variables',
       'declarations',
+      'rules',
       {
         type: 'at-rule',
         hasBlock: true,
@@ -54,7 +54,6 @@ module.exports = {
         type: 'at-rule',
         name: 'media',
       },
-      'rules',
     ],
   },
 };
