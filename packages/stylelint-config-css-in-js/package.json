@@ -25,6 +25,7 @@
   "main": "index.js",
   "peerDependencies": {
     "@stylelint/postcss-css-in-js": "^0.38.0",
+    "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-styled-components": "^0.1.1"
   }
 }
