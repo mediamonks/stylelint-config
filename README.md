@@ -5,18 +5,22 @@ The official Media.Monks stylelint configuration, based on the
 
 ## Installation
 
-The configuration can be installed via `npm`.
+The packages can be installed via `npm`.
 
 ```bash
-npm install --dev @mediamonks/stylelint-config-css
+npm install --save-dev @mediamonks/stylelint-config-css @mediamonks/stylelint-config
 ```
 
 ```bash
-npm install --dev @mediamonks/stylelint-config-scss
+npm install --save-dev @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
 ```
 
 ```bash
-npm install --dev @mediamonks/stylelint-config-css-in-js
+npm install --save-dev @mediamonks/stylelint-config-scss-muban @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
+```
+
+```bash
+npm install --save-dev @mediamonks/stylelint-config-css-in-js @mediamonks/stylelint-config
 ```
 
 To inform stylelint of this configuration, you have to add the `stylelint` property to your
@@ -24,32 +28,37 @@ To inform stylelint of this configuration, you have to add the `stylelint` prope
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config-css"
+   "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-css"
+   ]
 }
 ```
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config-scss"
+   "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-scss"
+   ]
 }
 ```
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config-css-in-js"
+   "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-scss",
+      "@mediamonks/stylelint-config-scss-muban"
+   ]
 }
 ```
 
-Instead of manually editing your `package.json`, you can also utilize the `npm pkg` subcommand:
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-css
-```
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-scss
-```
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-css-in-js
+```json
+"stylelint": {
+   "extends": [
+      "@mediamonks/stylelint-config"
+      "@mediamonks/stylelint-config-css-in-js"
+   ]
+}
 ```

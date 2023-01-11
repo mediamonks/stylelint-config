@@ -5,10 +5,10 @@ The official Media.Monks stylelint configuration, based on the
 
 ## Installation
 
-The configuration can be installed via `npm`.
+The package can be installed via `npm`.
 
 ```bash
-npm install --dev @mediamonks/stylelint-config-scss
+npm install --save-dev @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
 ```
 
 To inform stylelint of this configuration, you have to add the `stylelint` property to your
@@ -16,12 +16,9 @@ To inform stylelint of this configuration, you have to add the `stylelint` prope
 
 ```json
 "stylelint": {
-   "extends": "@mediamonks/stylelint-config-scss"
+   "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-scss"
+   ]
 }
-```
-
-Instead of manually editing your `package.json`, you can also utilize the `npm pkg` subcommand:
-
-```bash
-npm pkg set stylelint.extends=@mediamonks/stylelint-config-scss
 ```
