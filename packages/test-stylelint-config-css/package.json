@@ -9,5 +9,11 @@
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-css": "*",
     "stylelint": "^14.15.0"
+  },
+  "stylelint": {
+    "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-css"
+    ]
   }
 }

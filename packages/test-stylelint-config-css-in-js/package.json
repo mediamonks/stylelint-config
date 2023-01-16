@@ -10,5 +10,11 @@
     "@mediamonks/stylelint-config-css-in-js": "*",
     "styled-components": "^5.3.6",
     "stylelint": "^14.15.0"
+  },
+  "stylelint": {
+    "extends": [
+      "@mediamonks/stylelint-config",
+      "@mediamonks/stylelint-config-css-in-js"
+    ]
   }
 }

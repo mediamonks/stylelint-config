@@ -1,5 +1,5 @@
 {
-  "name": "@mediamonks/test-stylelint-config-scss",
+  "name": "@mediamonks/test-stylelint-config-scss-muban",
   "private": true,
   "scripts": {
     "stylelint": "stylelint ./**/*.scss",
@@ -8,12 +8,14 @@
   "devDependencies": {
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-scss": "*",
+    "@mediamonks/stylelint-config-scss-muban": "*",
     "stylelint": "^14.15.0"
   },
   "stylelint": {
     "extends": [
       "@mediamonks/stylelint-config",
-      "@mediamonks/stylelint-config-scss"
+      "@mediamonks/stylelint-config-scss",
+      "@mediamonks/stylelint-config-scss-muban"
     ]
   }
 }

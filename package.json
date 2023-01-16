@@ -5,8 +5,8 @@
     "packages/*"
   ],
   "scripts": {
-    "stylelint": "npm run stylelint --workspaces --if-present",
-    "stylelint:fix": "npm run stylelint:fix --workspaces --if-present",
+    "stylelint": "lerna run stylelint",
+    "stylelint:fix": "lerna run stylelint:fix",
     "prepare": "husky install"
   },
   "devDependencies": {

@@ -1,3 +1,0 @@
-{
-  "extends": ["@mediamonks/stylelint-config", "@mediamonks/stylelint-config-scss"]
-}
