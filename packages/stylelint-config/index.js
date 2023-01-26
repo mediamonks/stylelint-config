@@ -32,6 +32,7 @@ module.exports = {
     ],
     'selector-class-pattern': patternRuleOptions,
     'selector-id-pattern': patternRuleOptions,
+    'string-quotes': 'single',
 
     /**
      * Plugin rules
