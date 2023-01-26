@@ -20,6 +20,9 @@
   },
   "license": "MIT",
   "author": "frontend.monks",
+  "dependencies": {
+    "@mediamonks/stylelint-config-scss": "^1.0.7"
+  },
   "publishConfig": {
     "access": "public"
   },

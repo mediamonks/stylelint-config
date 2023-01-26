@@ -9,7 +9,8 @@ const patternRuleOptions = [
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  plugins: ['stylelint-order', 'stylelint-use-logical', 'stylelint-use-nesting'],
+  extends: ['stylelint-config-prettier'],
+  plugins: ['stylelint-order', 'stylelint-use-logical'],
   rules: {
     /**
      * Stylelint rules
@@ -32,7 +33,6 @@ module.exports = {
     ],
     'selector-class-pattern': patternRuleOptions,
     'selector-id-pattern': patternRuleOptions,
-    'string-quotes': 'single',
 
     /**
      * Plugin rules

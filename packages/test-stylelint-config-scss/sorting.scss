@@ -13,6 +13,29 @@ $kebab-case: red;
 /* stylelint-disable-next-line scss/dollar-variable-pattern */
 $PascalCase: red;
 
+/**
+ * Quotes
+ */
+// Let prettier deal with comment style
+.quotes {
+  content: 'single';
+
+  /* prettier-ignore */
+  content: "double";
+}
+
+/**
+ * Selector naming
+ */
+/* stylelint-disable-next-line selector-class-pattern */
+.se-lec-tor-na-ming {
+  text-align: start;
+}
+
+.seLecTorNaMing {
+  text-align: start;
+}
+
 .selector {
   @include mixin-without-block;
 
