@@ -9,7 +9,7 @@
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-scss": "*",
     "@mediamonks/stylelint-config-scss-muban": "*",
-    "stylelint": "^14.15.0"
+    "stylelint": "^15.3.0"
   },
   "stylelint": {
     "extends": [

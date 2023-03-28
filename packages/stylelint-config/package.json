@@ -22,7 +22,6 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "stylelint-config-prettier": "^9.0.4",
     "stylelint-order": "^5.0.0",
     "stylelint-use-logical": "^2.0.0",
     "stylelint-use-nesting": "^4.0.0"

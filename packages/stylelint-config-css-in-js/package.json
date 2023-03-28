@@ -27,8 +27,8 @@
     "@mediamonks/stylelint-config": "^1.0.9"
   },
   "peerDependencies": {
-    "@stylelint/postcss-css-in-js": "^0.38.0",
-    "stylelint-config-prettier": "^9.0.4",
+    "postcss-styled-syntax": "^0.4.0",
+    "stylelint-config-recommended": "^11.0.0",
     "stylelint-config-styled-components": "^0.1.1"
   }
 }

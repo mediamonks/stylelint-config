@@ -11,19 +11,12 @@ const patternRuleOptions = [
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  extends: ['stylelint-config-standard-scss', '@mediamonks/stylelint-config-scss'],
+  extends: ['@mediamonks/stylelint-config-scss'],
 
   /**
    * Overrides to make @mediamonks/stylelint-config-scss compatible with muban projects
    */
   rules: {
-    'max-nesting-depth': [
-      // eslint-disable-next-line no-magic-numbers
-      4,
-      {
-        ignore: ['blockless-at-rules'],
-      },
-    ],
     'selector-class-pattern': patternRuleOptions,
     'selector-id-pattern': patternRuleOptions,
   },
