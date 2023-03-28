@@ -17,13 +17,6 @@ module.exports = {
    * Overrides to make @mediamonks/stylelint-config-scss compatible with muban projects
    */
   rules: {
-    'max-nesting-depth': [
-      // eslint-disable-next-line no-magic-numbers
-      4,
-      {
-        ignore: ['blockless-at-rules'],
-      },
-    ],
     'selector-class-pattern': patternRuleOptions,
     'selector-id-pattern': patternRuleOptions,
   },
