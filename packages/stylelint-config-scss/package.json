@@ -27,7 +27,6 @@
     "@mediamonks/stylelint-config": "^1.0.9"
   },
   "peerDependencies": {
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-standard-scss": "^6.1.0"
+    "stylelint-config-recommended-scss": "^9.0.1"
   }
 }

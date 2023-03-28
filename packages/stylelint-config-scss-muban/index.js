@@ -11,7 +11,7 @@ const patternRuleOptions = [
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  extends: ['stylelint-config-standard-scss', '@mediamonks/stylelint-config-scss'],
+  extends: ['@mediamonks/stylelint-config-scss'],
 
   /**
    * Overrides to make @mediamonks/stylelint-config-scss compatible with muban projects
