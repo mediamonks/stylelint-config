@@ -8,19 +8,19 @@ The official Media.Monks stylelint configuration, based on the
 The packages can be installed via `npm`.
 
 ```bash
-npm install --save-dev @mediamonks/stylelint-config-css @mediamonks/stylelint-config
+npm install --save-dev @mediamonks/stylelint-config-css
 ```
 
 ```bash
-npm install --save-dev @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
+npm install --save-dev @mediamonks/stylelint-config-scss
 ```
 
 ```bash
-npm install --save-dev @mediamonks/stylelint-config-scss-muban @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
+npm install --save-dev @mediamonks/stylelint-config-scss-muban
 ```
 
 ```bash
-npm install --save-dev @mediamonks/stylelint-config-css-in-js @mediamonks/stylelint-config
+npm install --save-dev @mediamonks/stylelint-config-css-in-js
 ```
 
 To inform stylelint of this configuration, you have to add the `stylelint` property to your
@@ -28,37 +28,24 @@ To inform stylelint of this configuration, you have to add the `stylelint` prope
 
 ```json
 "stylelint": {
-   "extends": [
-      "@mediamonks/stylelint-config",
-      "@mediamonks/stylelint-config-css"
-   ]
+   "extends": "@mediamonks/stylelint-config-css",
 }
 ```
 
 ```json
 "stylelint": {
-   "extends": [
-      "@mediamonks/stylelint-config",
-      "@mediamonks/stylelint-config-scss"
-   ]
+   "extends": "@mediamonks/stylelint-config-scss",
 }
 ```
 
 ```json
 "stylelint": {
-   "extends": [
-      "@mediamonks/stylelint-config",
-      "@mediamonks/stylelint-config-scss",
-      "@mediamonks/stylelint-config-scss-muban"
-   ]
+   "extends": "@mediamonks/stylelint-config-scss-muban",
 }
 ```
 
 ```json
 "stylelint": {
-   "extends": [
-      "@mediamonks/stylelint-config"
-      "@mediamonks/stylelint-config-css-in-js"
-   ]
+   "extends": "@mediamonks/stylelint-config-css-in-js",
 }
 ```

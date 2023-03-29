@@ -8,7 +8,7 @@ The official Media.Monks stylelint configuration, based on the
 The package can be installed via `npm`.
 
 ```bash
-npm install --save-dev @mediamonks/stylelint-config-scss-muban @mediamonks/stylelint-config-scss @mediamonks/stylelint-config
+npm install --save-dev @mediamonks/stylelint-config-scss-muban
 ```
 
 To inform stylelint of this configuration, you have to add the `stylelint` property to your
@@ -16,10 +16,6 @@ To inform stylelint of this configuration, you have to add the `stylelint` prope
 
 ```json
 "stylelint": {
-   "extends": [
-      "@mediamonks/stylelint-config",
-      "@mediamonks/stylelint-config-scss",
-      "@mediamonks/stylelint-config-scss-muban"
-   ]
+   "extends": "@mediamonks/stylelint-config-scss-muban"
 }
 ```
