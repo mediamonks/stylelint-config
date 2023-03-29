@@ -17,7 +17,6 @@ module.exports = {
     'alpha-value-notation': 'number',
     'color-hex-length': 'long',
     'declaration-block-single-line-max-declarations': 0,
-    'declaration-property-value-no-unknown': true,
     'no-descending-specificity': true,
     'selector-class-pattern': patternRuleOptions,
     'selector-id-pattern': patternRuleOptions,
