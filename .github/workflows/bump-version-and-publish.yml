@@ -3,15 +3,6 @@ name: Bump version & Publish
 on:
   workflow_dispatch:
     inputs:
-      package:
-        description: 'Select the package'
-        required: true
-        type: choice
-        options:
-          - packages/stylelint-config
-          - packages/stylelint-config-css
-          - packages/stylelint-config-css-in-js
-          - packages/stylelint-config-scss
       version:
         description: 'Semver type of new version'
         required: true
@@ -34,37 +25,26 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '18'
           cache: 'npm'
       - name: Install npm packages
-        run: |
-          cd ${{ github.event.inputs.package }}
-          npm ci
+        run: npm ci
       - name: Setup Git
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-      - name: bump version workspace
+      - name: Publish
+        if: ${{ !github.event.inputs.prereleaseid }}
         run: |
-          echo "1. cd ${{ github.event.inputs.package }}"
-          cd ${{ github.event.inputs.package }}
-
-          echo "2. npm version"
-          npm version ${{ github.event.inputs.version }} --no-git-tag-version --preid ${{ github.event.inputs.prereleaseid }}
-
-          echo "3. git add"
-          git add .
-
-          echo "4. git commit ${{ github.event.inputs.package }} v$(npm pkg get version | jq -r '.[]')"
-          git commit -m "${{ github.event.inputs.package }} v$(npm pkg get version | jq -r '.[]')"
-
-          echo "5. git tag $(npm pkg get name | jq -r '.[]')@$(npm pkg get version | jq -r '.[]')"
-          git tag $(npm pkg get name | jq -r '.[]')@$(npm pkg get version | jq -r '.[]')
-      - name: publish
-        run: |
-          cd ${{ github.event.inputs.package }}
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-          npm publish
+          lerna publish ${{ github.event.inputs.version }} --y
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish
+        if: ${{ github.event.inputs.prereleaseid }}
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+          lerna publish ${{ github.event.inputs.version }} --preid ${{ github.event.inputs.prereleaseid }} --y
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Push latest version

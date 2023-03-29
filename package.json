@@ -16,6 +16,7 @@
     "husky": "^8.0.2",
     "lerna": "^6.0.3",
     "lint-staged": "^13.0.3",
+    "nx": "^15.8.9",
     "prettier": "^2.7.1"
   },
   "engines": {
