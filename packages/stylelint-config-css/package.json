@@ -1,6 +1,6 @@
 {
   "name": "@mediamonks/stylelint-config-css",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
     "Media.Monks",
@@ -23,7 +23,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@mediamonks/stylelint-config": "^1.0.10",
+    "@mediamonks/stylelint-config": "^1.0.11",
     "stylelint-config-recommended": "^11.0.0"
   }
 }
