@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/lerna.json",
   "packages": ["packages/*"],
-  "version": "1.0.11",
+  "version": "1.1.0",
   "useWorkspaces": true
 }
