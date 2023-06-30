@@ -19,6 +19,9 @@ on:
 jobs:
   bump-version:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
 
     steps:
       - name: Check out source
@@ -41,14 +44,14 @@ jobs:
         if: ${{ !github.event.inputs.prereleaseid }}
         run: |
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-          lerna publish ${{ github.event.inputs.version }} --y
+          lerna publish ${{ github.event.inputs.version }} --y --provenance
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish
         if: ${{ github.event.inputs.prereleaseid }}
         run: |
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-          lerna publish ${{ github.event.inputs.version }} --preid ${{ github.event.inputs.prereleaseid }} --y
+          lerna publish ${{ github.event.inputs.version }} --preid ${{ github.event.inputs.prereleaseid }} --y --provenance
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Push latest version
