@@ -23,7 +23,7 @@
     "prettier": "^2.7.1"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "prettier": "@mediamonks/prettier-config",
   "lint-staged": {
