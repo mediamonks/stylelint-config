@@ -44,7 +44,7 @@ jobs:
         if: ${{ !github.event.inputs.prereleaseid }}
         run: |
           npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}  
-          lerna publish ${{ github.event.inputs.version }} --y
+          NPM_CONFIG_PROVENANCE=true lerna publish ${{ github.event.inputs.version }} --y
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Publish
