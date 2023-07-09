@@ -24,6 +24,6 @@
   "main": "index.js",
   "dependencies": {
     "@mediamonks/stylelint-config": "^1.2.2",
-    "stylelint-config-recommended": "^12.0.0"
+    "stylelint-config-recommended": "^13.0.0"
   }
 }
