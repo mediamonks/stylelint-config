@@ -1,6 +1,6 @@
 {
   "name": "@mediamonks/stylelint-config-css-in-js",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
   "keywords": [
     "Media.Monks",
@@ -24,7 +24,7 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@mediamonks/stylelint-config": "^1.2.2"
+    "@mediamonks/stylelint-config": "^1.3.0"
   },
   "peerDependencies": {
     "postcss-styled-syntax": "^0.4.0",
