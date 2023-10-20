@@ -8,11 +8,10 @@
   "dependencies": {
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-css": "*",
-    "stylelint": "^15.10.1"
+    "stylelint": "^15.11.0"
   },
   "stylelint": {
     "extends": [
-      "@mediamonks/stylelint-config",
       "@mediamonks/stylelint-config-css"
     ]
   }

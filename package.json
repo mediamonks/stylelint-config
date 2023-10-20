@@ -13,14 +13,14 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@mediamonks/eslint-config": "^2.0.3",
+    "@mediamonks/eslint-config": "^2.3.1",
     "@mediamonks/prettier-config": "^1.0.1",
-    "eslint": "^8.28.0",
-    "husky": "^8.0.2",
-    "lerna": "^7.1.1",
-    "lint-staged": "^14.0.1",
-    "nx": "^16.0.1",
-    "prettier": "^3.0.2"
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "lerna": "^7.4.1",
+    "lint-staged": "^15.0.2",
+    "nx": "^17.0.0",
+    "prettier": "^3.0.3"
   },
   "engines": {
     "node": ">=18"

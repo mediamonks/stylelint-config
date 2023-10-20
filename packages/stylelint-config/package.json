@@ -21,9 +21,8 @@
     "access": "public"
   },
   "main": "index.js",
-  "peerDependencies": {
-    "stylelint-order": "^5.0.0",
-    "stylelint-use-logical": "^2.0.0",
-    "stylelint-use-nesting": "^4.0.0"
+  "dependencies": {
+    "stylelint-order": "^6.0.3",
+    "stylelint-use-logical": "^2.1.0"
   }
 }
