@@ -1,6 +1,7 @@
 {
   "name": "@mediamonks/test-stylelint-config-scss",
   "private": true,
+  "type": "module",
   "scripts": {
     "stylelint": "stylelint ./**/*.scss",
     "stylelint:fix": "stylelint ./**/*.scss --fix"

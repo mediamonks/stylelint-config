@@ -1,6 +1,7 @@
 {
   "name": "@mediamonks/test-stylelint-config-scss-muban",
   "private": true,
+  "type": "module",
   "scripts": {
     "stylelint": "stylelint ./**/*.scss",
     "stylelint:fix": "stylelint ./**/*.scss --fix"

@@ -1,6 +1,7 @@
 {
   "name": "@mediamonks/test-stylelint-config-css-in-js",
   "private": true,
+  "type": "module",
   "scripts": {
     "stylelint": "stylelint ./**/*.js",
     "stylelint:fix": "stylelint ./**/*.js --fix"
@@ -8,7 +9,7 @@
   "dependencies": {
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-css-in-js": "*",
-    "styled-components": "^6.1.0",
+    "styled-components": "^6.1.11",
     "stylelint": "^16.6.1"
   },
   "stylelint": {
