@@ -21,5 +21,11 @@ export default {
      * CSS Tools
      */
     'csstools/use-nesting': 'always',
+
+    /**
+     * Incompatible with Prettier
+     */
+    'scss/operator-no-newline-after': null,
+    'scss/operator-no-newline-before': null,
   },
 };
