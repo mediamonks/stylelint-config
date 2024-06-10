@@ -22,7 +22,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "index.js",
+  "exports": {
+    ".": "./index.mjs"
+  },
   "dependencies": {
     "@mediamonks/stylelint-config": "^1.6.0",
     "stylelint-config-recommended-scss": "^14.0.0",

@@ -8,7 +8,7 @@ const patternRuleOptions = [
 ];
 
 // eslint-disable-next-line unicorn/prefer-module
-module.exports = {
+export default {
   extends: ['stylelint-config-recommended-scss', '@mediamonks/stylelint-config'],
   plugins: ['stylelint-use-nesting'],
   rules: {
