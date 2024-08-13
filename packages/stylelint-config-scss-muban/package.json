@@ -20,7 +20,7 @@
   },
   "license": "MIT",
   "author": "frontend.monks",
-  "dependencies": {
+  "peerDependencies": {
     "@mediamonks/stylelint-config-scss": "^1.7.0"
   },
   "publishConfig": {

@@ -21,7 +21,8 @@
     "access": "public"
   },
   "main": "index.js",
-  "dependencies": {
+  "peerDependencies": {
+    "stylelint": "^16.8.1",
     "stylelint-order": "^6.0.3",
     "stylelint-use-logical": "^2.1.0"
   }
