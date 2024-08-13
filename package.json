@@ -10,7 +10,7 @@
   "scripts": {
     "stylelint": "lerna run stylelint",
     "stylelint:fix": "lerna run stylelint:fix",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@mediamonks/eslint-config": "^2.3.1",
