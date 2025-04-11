@@ -15,7 +15,7 @@ module.exports = {
      * Stylelint rules
      */
     'alpha-value-notation': 'number',
-    'color-hex-length': 'long',
+    'color-hex-length': 'short',
     'declaration-block-single-line-max-declarations': 0,
     'no-descending-specificity': true,
     'selector-class-pattern': patternRuleOptions,
