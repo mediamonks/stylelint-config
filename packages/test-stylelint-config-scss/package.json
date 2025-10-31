@@ -9,7 +9,7 @@
   "devDependencies": {
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-scss": "*",
-    "stylelint": "^16.6.1"
+    "stylelint": "^16.25.0"
   },
   "stylelint": {
     "extends": [

@@ -1,8 +1,9 @@
 {
   "name": "@mediamonks/stylelint-config-scss-muban",
   "version": "1.8.1",
-  "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
+  "description": "Sharable stylelint config based on Monks Frontend Coding Standards",
   "keywords": [
+    "monks",
     "Media.Monks",
     "stylelint-config",
     "stylelint",
@@ -21,7 +22,7 @@
   "license": "MIT",
   "author": "frontend.monks",
   "peerDependencies": {
-    "@mediamonks/stylelint-config-scss": "^1.7.0"
+    "@mediamonks/stylelint-config-scss": "^1.8.1"
   },
   "publishConfig": {
     "access": "public"

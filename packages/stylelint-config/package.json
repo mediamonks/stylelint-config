@@ -1,8 +1,9 @@
 {
   "name": "@mediamonks/stylelint-config",
   "version": "1.8.1",
-  "description": "Sharable stylelint config based on Media.Monks Frontend Coding Standards",
+  "description": "Sharable stylelint config based on Monks Frontend Coding Standards",
   "keywords": [
+    "monks",
     "Media.Monks",
     "stylelint-config",
     "stylelint"
@@ -22,8 +23,8 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "stylelint": "^16.8.1",
-    "stylelint-order": "^6.0.3",
-    "stylelint-use-logical": "^2.1.0"
+    "stylelint": "^16.25.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-use-logical": "^2.1.2"
   }
 }

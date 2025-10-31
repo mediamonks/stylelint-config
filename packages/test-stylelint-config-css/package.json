@@ -9,7 +9,7 @@
   "dependencies": {
     "@mediamonks/stylelint-config": "*",
     "@mediamonks/stylelint-config-css": "*",
-    "stylelint": "^16.6.1"
+    "stylelint": "^16.25.0"
   },
   "stylelint": {
     "extends": [
