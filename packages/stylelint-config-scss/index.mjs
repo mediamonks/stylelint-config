@@ -27,5 +27,10 @@ export default {
      */
     'scss/operator-no-newline-after': null,
     'scss/operator-no-newline-before': null,
+
+    /**
+     * SCSS handles nesting differently, disable strict scoping root checks
+     */
+    'nesting-selector-no-missing-scoping-root': null,
   },
 };
