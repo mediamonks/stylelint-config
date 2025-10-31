@@ -8,19 +8,17 @@
     "provenance": true
   },
   "scripts": {
-    "stylelint": "lerna run stylelint",
-    "stylelint:fix": "lerna run stylelint:fix",
+    "stylelint": "npm run stylelint --workspaces --if-present",
+    "stylelint:fix": "npm run stylelint:fix --workspaces --if-present",
     "prepare": "husky"
   },
   "devDependencies": {
-    "@mediamonks/eslint-config": "^2.3.1",
+    "@mediamonks/eslint-config": "^3.1.1",
     "@mediamonks/prettier-config": "^1.0.1",
-    "eslint": "^8.51.0",
-    "husky": "^9.0.11",
-    "lerna": "^8.0.0",
-    "lint-staged": "^15.0.2",
-    "nx": "^20.4.2",
-    "prettier": "^3.0.3"
+    "eslint": "^9.38.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2"
   },
   "engines": {
     "node": ">=20"
